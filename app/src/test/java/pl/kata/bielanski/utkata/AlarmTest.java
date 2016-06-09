@@ -16,8 +16,16 @@ public class AlarmTest {
 	@Test
 	public void returnFalse_whenSetFalse(){
 		MyAlarm myAlarm = new MyAlarm();
-		myAlarm.setFalse(false);
+		myAlarm.setFlag(false);
 		boolean flag = myAlarm.getFlag();
 		assertThat(flag, is(false));
+	}
+
+	@Test
+	public void returnTrue_whenSetTrue(){
+		MyAlarm myAlarm = new MyAlarm();
+		myAlarm.setFlag(true);
+		boolean flag = myAlarm.getFlag();
+		assertThat(flag, is(true));
 	}
 }
