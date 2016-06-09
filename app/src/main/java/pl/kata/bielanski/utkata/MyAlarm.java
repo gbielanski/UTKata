@@ -7,5 +7,6 @@ public class MyAlarm {
 	}
 
 	public void setFalse(boolean flag) {
+		mFlag = flag;
 	}
 }
