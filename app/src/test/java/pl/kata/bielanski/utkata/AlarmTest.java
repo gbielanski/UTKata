@@ -12,4 +12,12 @@ public class AlarmTest {
 		boolean flag = myAlarm.getFlag();
 		assertThat(flag, is(true));
 	}
+
+	@Test
+	public void returnFalse_whenSetFalse(){
+		MyAlarm myAlarm = new MyAlarm();
+		myAlarm.setFalse(false);
+		boolean flag = myAlarm.getFlag();
+		assertThat(flag, is(false));
+	}
 }
